@@ -4,7 +4,7 @@
   "authors": [
     "Miles Shang <mail@mshang.ca>"
   ],
-  "description": "The goal of this project is to create a browser-based, fully local syntax tree generator, for drawing trees as you might find in an introductory linguistics course.",
+  "description": "The goal of this project is to create a browser-based, fully local syntax tree generator.",
   "main": "index.html",
   "keywords": [
     "syntax",
