@@ -8,7 +8,7 @@
   "main": [
     "js/syntree.js",
     "js/base64.js",
-    "js/canvas2image.js",
+    "js/canvas2image.js"
   ],
   "keywords": [
     "syntax",
