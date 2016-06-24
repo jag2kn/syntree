@@ -5,7 +5,11 @@
     "Miles Shang <mail@mshang.ca>"
   ],
   "description": "The goal of this project is to create a browser-based, fully local syntax tree generator.",
-  "main": "js/syntree.js",
+  "main": [
+    "js/syntree.js",
+    "js/base64.js",
+    "js/canvas2image.js",
+  ],
   "keywords": [
     "syntax",
     "tree",
