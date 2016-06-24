@@ -1,0 +1,22 @@
+{
+  "name": "syntree",
+  "homepage": "http://mshang.ca/syntree/",
+  "authors": [
+    "Miles Shang <mail@mshang.ca>"
+  ],
+  "description": "The goal of this project is to create a browser-based, fully local syntax tree generator, for drawing trees as you might find in an introductory linguistics course.",
+  "main": "index.html",
+  "keywords": [
+    "syntax",
+    "tree",
+    "generator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
