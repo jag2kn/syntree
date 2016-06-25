@@ -347,14 +347,15 @@ var Canvas2Image = (function() {
 	};
 
 })();
-
-﻿// By Miles Shang <mail@mshang.ca>
+// By Miles Shang <mail@mshang.ca>
 // MIT license
 
 var debug = true;
 var margin = 15; // Number of pixels from tree to edge on each side.
 var padding_above_text = 6; // Lines will end this many pixels above text.
 var padding_below_text = 6;
+var vert_space = 0;
+
 
 function Node() {
 	this.value = null;
@@ -398,7 +399,7 @@ Node.prototype.set_siblings = function(parent) {
 
 Node.prototype.check_triangle = function() {
 	this.draw_triangle = 0;
-	if ((!this.has_children) && (this.parent.starred))
+	if ((!this.has_children) && this.parent &&(this.parent.starred))
 		this.draw_triangle = 1;
 
 	for (var child = this.first; child != null; child = child.next)
@@ -639,7 +640,8 @@ MovementLine.prototype.draw = function(ctx) {
 	ctx.fill();
 }
 
-function go(str, font_size, term_font, nonterm_font, vert_space, hor_space, color, term_lines) {	
+function go(str, font_size, term_font, nonterm_font, _vert_space, hor_space, color, term_lines) {	
+	vert_space = _vert_space;
 	// Clean up the string
 	str = str.replace(/^\s+/, "");
 	var open = 0;
